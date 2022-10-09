@@ -27,4 +27,4 @@ jobs:
     - name: Run update
       run: ${{matrix.commandUpdate}}
     - name: Run tests
-      run ${{matrix.commandTest}}
+      run: ${{matrix.commandTest}}
