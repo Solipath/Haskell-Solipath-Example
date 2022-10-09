@@ -24,5 +24,7 @@ jobs:
             commandTest: .\solipath.bat cabal test
     steps:
     - uses: actions/checkout@v2
+    - name: Run update
+      run: ${{matrix.commandUpdate}}
     - name: Run tests
-      run: ${{matrix.command}}
+      run ${{matrix.commandTest}}
