@@ -14,11 +14,11 @@ jobs:
       matrix:
         include:
           - os: macos-latest
-            command: ./solipath cabal test
+            command: ./solipath cabal update && ./solipath cabal test
           - os: ubuntu-latest
-            command: ./solipath cabal test
+            command: ./solipath cabal update && ./solipath cabal test
           - os: windows-latest
-            command: .\solipath.bat cabal test
+            command: .\solipath cabal update && .\solipath.bat cabal test
     steps:
     - uses: actions/checkout@v2
     - name: Run tests
