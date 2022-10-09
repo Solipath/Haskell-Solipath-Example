@@ -16,9 +16,9 @@ jobs:
           - os: macos-latest
             commandUpdate: ./solipath cabal update
             commandTest: ./solipath cabal test
-          - os: ubuntu-latest
-            commandUpdate: ./solipath cabal update
-            commandTest: ./solipath cabal test
+#          - os: ubuntu-latest
+#            commandUpdate: ./solipath cabal update
+#            commandTest: ./solipath cabal test
           - os: windows-latest
             commandUpdate: .\solipath.bat cabal update
             commandTest: .\solipath.bat cabal test
