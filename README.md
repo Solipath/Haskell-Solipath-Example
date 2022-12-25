@@ -2,6 +2,12 @@
 Solipath is a tool that downloads and temporarily sets up environment variables for various programming languages and related tools
 
 This is a quick showcase of using Solipath for a haskell project
+
+Before running tests you should refresh the package index
+```bash
+./solipath cabal update
+```
+
 To run tests from the command line:
 ```bash
 ./solipath cabal test
